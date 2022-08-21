@@ -16,13 +16,14 @@ public class Main {
         //System.out.println(newDescending);
 
         //ReadFile.writeInfoToFile(newIncrease);
-        List<String>myNewStringArray = ReadFileString.getInfoFromFileWithString(new File("in3.txt"));
-        List<String>myNewStringArray1 = ReadFileString.getInfoFromFileWithString(new File("in4.txt"));
+        //List<String>myNewStringArray = ReadFileString.getInfoFromFileWithString(new File("in3.txt"));
+        //List<String>myNewStringArray1 = ReadFileString.getInfoFromFileWithString(new File("in4.txt"));
         //System.out.println(myNewStringArray);
         //System.out.println(myNewStringArray1);
         //System.out.println(ReadFileString.getSortFileMergeIncreaseString(myNewStringArray,myNewStringArray1));
         // System.out.println(ReadFileString.getSortFileMergeDescendingString(myNewStringArray,myNewStringArray1));
-        WriteFile.writeInfoToFileString(ReadFileString.getSortFileMergeIncreaseString(myNewStringArray,myNewStringArray1));
+        //WriteFile.writeInfoToFileString(ReadFileString.getSortFileMergeIncreaseString(myNewStringArray,myNewStringArray1));
+        WriteFile.writeInfoToFileString(ReadFileString.getSortFileMergeIncreaseString( ReadFileString.getInfoFromFileWithString(new File("in3.txt")),ReadFileString.getInfoFromFileWithString(new File("in4.txt"))));
        // ReadFile.writeInfoToFileString(ReadFile.getSortFileMergeDescendingString(myNewStringArray,myNewStringArray1));
 }
 }
